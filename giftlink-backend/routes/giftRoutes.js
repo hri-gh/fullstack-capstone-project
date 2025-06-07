@@ -1,6 +1,10 @@
-// const connectToDatabase = require('./models/db');router.get('/', async (req, res) => {
+const express = require('express');
+const router = express.Router();
+const connectToDatabase = require('../models/db');
+const logger = require('../logger');router.get('/', async (req, res) => {
     try {
-        // Task 1: Connect to MongoDB and store connection to db constant
+        // Task 1: Connect to MongoDB
+    logger.info('/ called'); and store connection to db constant
         // const db = {{insert code here}}
 
         Task 2: useawait connectToDatabase();thod to retrieve the gift collection
