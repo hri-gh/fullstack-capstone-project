@@ -27,6 +27,7 @@ function DetailsPage() {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
+                console.log('Fetched gift details:', data);
                 setGift(data);
             } catch (error) {
                 setError(error.message);
